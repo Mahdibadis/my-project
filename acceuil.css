@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --clr-accent: #ffb703;      
+  --clr-neutral-100: #f1f1f1; 
+  --clr-neutral-900: #0a0a0a; 
+  --blur-backdrop: 6px;
+  --radius-lg: 22px;
+  --shadow-lg: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--clr-neutral-100);
+  background: url('./images/3318f4e14af22baef853213b01a8390ca6921c2b.jpg')
+    center/cover no-repeat fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 5%;
+}
+
+
+.entro {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(10, 10, 10, 0.72);
+  border-radius: var(--radius-lg);
+  padding: 50px 60px;
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(var(--blur-backdrop));
+  text-align: center;
+  animation: fadeIn 0.9s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { transform: translateY(40px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* ===== 2.1 العناوين ===== */
+.entro h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+  font-weight: 700;
+  color: var(--clr-accent);
+}
+
+.entro h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin: 45px 0 25px;
+  font-weight: 600;
+}
+
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.links a {
+  text-decoration: none;
+  padding: 10px 16px;
+  font-weight: 500;
+  color: var(--clr-neutral-100);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: var(--clr-accent);
+  transition: width 0.3s ease;
+}
+
+.links a:hover,
+.links a:focus-visible {
+  color: var(--clr-accent);
+  border-color: var(--clr-accent);
+}
+
+.links a:hover::after,
+.links a:focus-visible::after {
+  width: 100%;
+}
+
+
+.entro p,
+.entro li {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.entro ul {
+  list-style: square inside;
+  margin: 18px auto 28px;
+  max-width: 650px;
+  text-align: left;
+}
+
+.entro li {
+  margin-bottom: 12px;
+  padding-left: 2px;
+}
+
+
+footer {
+  margin-top: 55px;
+}
+
+footer h3 {
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+
+footer a {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 10px 18px;
+  background: var(--clr-accent);
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.25s ease;
+}
+
+footer a:hover {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 640px) {
+  body {
+    padding: 30px 4%;
+  }
+
+  .entro {
+    padding: 40px 28px;
+  }
+
+  .links {
+    gap: 14px;
+  }
+
+  .links a {
+    font-size: 0.92rem;
+  }
+}
