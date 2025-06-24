@@ -1,0 +1,120 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://wallpaperaccess.com/full/1239440.jpg') no-repeat center center fixed;
+  color: #f2f2f2;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #333333;
+  border-radius: 8px;
+  padding: 15px 0;
+  border-bottom: 2px solid #dc9811;
+}
+
+.links a {
+  color: #f5cc2a;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.links a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+
+.role.play, .role-play {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.role.play h1 {
+  font-size: 3em;
+  color: #ffc800;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 20px;
+}
+
+.role.play a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #fff707;
+  color: #000000;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.role.play a:hover {
+  background-color: #ffbd22;
+}
+
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background-color: #3e3e3e;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #984545;
+}
+
+
+h1, h2 {
+  color: #d3c424;
+  margin-bottom: 15px;
+}
+
+
+p {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+ul {
+  margin: 20px 0;
+  padding-left: 25px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  color: #f2f2f2;
+}
+
+
+ul li::before {
+  content: "🔹";
+  margin-right: 8px;
+  color: #f52aeb;
+}
+
+@media (max-width: 768px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .role.play h1 {
+    font-size: 2.2em;
+  }
+
+  .role.play a {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+}

@@ -1,17 +1,17 @@
-/* gta-cheat.css – professional styling */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&display=swap');
 
 :root {
   --bg: #121212;
   --card-bg: #1e1e1e;
-  --primary: #00ffd5;
-  --secondary: #ff0048;
-  --text: #f1f1f1;
+  --primary: #ffe600;
+  --secondary: #ff7b00;
+  --text: #ffffff;
   --border: #333;
-  --hover: #ff004c;
-  --radius: 10px;
-  --shadow: 0 0 15px rgba(0, 255, 213, 0.15);
+  --hover: #ffa200;
+  --radius: 16px;
+  --shadow: 0 0 15px rgba(255, 34, 0, 0.15);
 }
 
 * {
@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: var(--bg);
+  background: url('https://wallpaperaccess.com/full/1239440.jpg') no-repeat center center fixed;
   color: var(--text);
   padding: 30px 20px;
 }
